@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\bthor\\Desktop\\School\\Summer 2019\\Software Engineering\\UVSim\\UVSimConsoleUI\\UVSimConsoleUI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\bthor\\Desktop\\School\\Summer 2019\\Software Engineering\\UVSim\\UVSimConsoleUI\\UVSimConsoleUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bthor\\Desktop\\School\\Summer 2019\\Software Engineering\\UVSim\\UVSimConsoleUI\\UVSimConsoleUI.csproj",
+        "projectName": "UVSimConsoleUI",
+        "projectPath": "C:\\Users\\bthor\\Desktop\\School\\Summer 2019\\Software Engineering\\UVSim\\UVSimConsoleUI\\UVSimConsoleUI.csproj",
+        "packagesPath": "C:\\Users\\bthor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bthor\\Desktop\\School\\Summer 2019\\Software Engineering\\UVSim\\UVSimConsoleUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bthor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
