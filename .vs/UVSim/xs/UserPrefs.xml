@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{79AE95BF-74BA-4D57-9262-BA4F9099F42C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UVSimConsoleUI/Program.cs">
+    <Files>
+      <File FileName="UVSimConsoleUI/Program.cs" Line="10" Column="20" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UVSim" expanded="True">
+            <Node name="UVSimConsoleUI" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UVSimConsoleUI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
