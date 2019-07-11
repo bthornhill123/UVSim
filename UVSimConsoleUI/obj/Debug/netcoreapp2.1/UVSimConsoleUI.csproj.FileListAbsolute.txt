@@ -1,0 +1,11 @@
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\UVSimConsoleUI.deps.json
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\UVSimConsoleUI.runtimeconfig.json
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\UVSimConsoleUI.runtimeconfig.dev.json
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\UVSimConsoleUI.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\UVSimConsoleUI.pdb
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1\UVSimConsoleUI.csprojAssemblyReference.cache
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1\UVSimConsoleUI.csproj.CoreCompileInputs.cache
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1\UVSimConsoleUI.AssemblyInfoInputs.cache
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1\UVSimConsoleUI.AssemblyInfo.cs
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1\UVSimConsoleUI.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1\UVSimConsoleUI.pdb
