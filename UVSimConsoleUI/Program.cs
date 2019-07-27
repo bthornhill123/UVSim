@@ -13,17 +13,17 @@ namespace UVSimConsoleUI
     // Note: <git status> will give you the current status
     class Program
     {
-        static void Main(string[] args)
-        {
-            UVSim sim = new UVSim();
+        //static void Main(string[] args)
+        //{
+        //    UVSim sim = new UVSim();
 
-            Console.WriteLine(sim.FetchUserManual());
+        //    Console.WriteLine(sim.FetchUserManual());
 
-            sim.AcceptUserProgram();
+        //    sim.AcceptUserProgram();
 
-            Console.WriteLine(sim.FetchRegisterStats());
+        //    //Console.WriteLine(sim.FetchRegisterStats());
 
-            Console.WriteLine(sim.FetchMemoryForDisplay());
-        }
+        //    //Console.WriteLine(sim.FetchMemoryForDisplay());
+        //}
     }
 }

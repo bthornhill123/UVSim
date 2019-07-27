@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UVSimLibrary.Models
 {
-    public class WordModel
+    public class InputCommandModel
     {
         public int MemoryLocation { get; set; }
         public string Operation { get; set; } // First 2 digits (command)

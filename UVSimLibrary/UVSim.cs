@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 using UVSimLibrary.Models;
 
 namespace UVSimLibrary
 {
     public class UVSim
     {
-        private List<WordModel> memory = new List<WordModel>();
+        private List<InputCommandModel> memory = new List<InputCommandModel>();
         private int programCounter = 0;
         private readonly int MEM_SIZE;
 
@@ -16,7 +17,7 @@ namespace UVSimLibrary
             MEM_SIZE = memorySize;
         }
 
-        public string FetchUserManual()
+        public void FetchUserManual()
         {
             string output = "";
 
@@ -26,7 +27,7 @@ namespace UVSimLibrary
             output += "When you are finished, enter -99999 to stop and run program.\n";
             output += "Please enter commands:\n";
 
-            return output;
+            MessageBox.Show(output);
         }
 
         public void AcceptUserProgram()
@@ -44,7 +45,7 @@ namespace UVSimLibrary
                 string operation = response.Substring(0, 2);
                 string operand = response.Substring(2, 2);
 
-                memory.Add(new WordModel { MemoryLocation = memoryLocation++, Operation = operation, Operand = operand });
+                memory.Add(new InputCommandModel { MemoryLocation = memoryLocation++, Operation = operation, Operand = operand });
             } while (response != "9999");
 
 
@@ -58,59 +59,55 @@ namespace UVSimLibrary
 
         private void RunCommand(string operation, string operand)
         {
-            switch (operation)
-            {
-                case "10":
-                    Read(operand);
-                    break;
-                case "11":
-                    Write(operand);
-                    break;
-                case "20":
-                    Load(operand);
-                    break;
-                case "21":
-                    Store(operand);
-                    break;
-                case "30":
-                    Add(operand);
-                    break;
-                case "31":
-                    Subtract(operand);
-                    break;
-                case "32":
-                    Divide(operand);
-                    break;
-                case "33":
-                    Multiply(operand);
-                    break;
-                case "40":
-                    Branch(operand);
-                    break;
-                case "41":
-                    BranchNeg(operand);
-                    break;
-                case "42":
-                    BranchZero(operand);
-                    break;
-                case "43":
-                    Halt();
-                    break;
-            }
+            //switch (operation)
+            //{
+            //    case "10":
+            //        Read(operand);
+            //        break;
+            //    case "11":
+            //        Write(operand);
+            //        break;
+            //    case "20":
+            //        Load(operand);
+            //        break;
+            //    case "21":
+            //        Store(operand);
+            //        break;
+            //    case "30":
+            //        Add(operand);
+            //        break;
+            //    case "31":
+            //        Subtract(operand);
+            //        break;
+            //    case "32":
+            //        Divide(operand);
+            //        break;
+            //    case "33":
+            //        Multiply(operand);
+            //        break;
+            //    case "40":
+            //        Branch(operand);
+            //        break;
+            //    case "41":
+            //        BranchNeg(operand);
+            //        break;
+            //    case "42":
+            //        BranchZero(operand);
+            //        break;
+            //    case "43":
+            //        Halt();
+            //        break;
+            //}
         }
 
-        public string FetchRegisterStats()
+        public void DisplayRegisterStats()
         {
-            string output = "";
-
-            return output;
+            
         }
 
-        public string FetchMemoryForDisplay()
+        public void DisplayMemory()
         {
-            string output = "";
-
-            return output;
+            
         }
 
 

@@ -26,7 +26,7 @@ namespace UVSimWindowsFormsUI
             Thread t = new Thread(() =>
             {
                 Thread.Sleep(500);
-                MessageBox.Show(sim.FetchUserManual());
+                sim.FetchUserManual();
             });
             t.Start();
         }
