@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "UVSimLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/UVSimLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UVSimLibrary.dll": {}
+        }
       }
     }
   },
@@ -680,11 +690,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "UVSimLibrary/1.0.0": {
+      "type": "project",
+      "path": "../UVSimLibrary/UVSimLibrary.csproj",
+      "msbuildProject": "../UVSimLibrary/UVSimLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "UVSimLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -719,7 +735,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Repos\\School\\SoftwareEngineering\\UVSim\\UVSimLibrary\\UVSimLibrary.csproj": {
+              "projectPath": "C:\\Repos\\School\\SoftwareEngineering\\UVSim\\UVSimLibrary\\UVSimLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

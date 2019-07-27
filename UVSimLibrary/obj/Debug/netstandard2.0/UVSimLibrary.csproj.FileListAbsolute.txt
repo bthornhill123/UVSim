@@ -1,0 +1,9 @@
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.csprojAssemblyReference.cache
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.csproj.CoreCompileInputs.cache
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.AssemblyInfoInputs.cache
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.AssemblyInfo.cs
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\UVSimLibrary.deps.json
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\UVSimLibrary.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\UVSimLibrary.pdb
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.pdb

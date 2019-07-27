@@ -1,4 +1,5 @@
 ﻿using System;
+using UVSimLibrary;
 
 namespace UVSimConsoleUI
 {
@@ -14,13 +15,15 @@ namespace UVSimConsoleUI
     {
         static void Main(string[] args)
         {
-            UVSim.DisplayUserManual();
+            UVSim sim = new UVSim();
 
-            UVSim.AcceptUserProgram();
+            Console.WriteLine(sim.FetchUserManual());
 
-            UVSim.DisplayRegisterStats();
+            sim.AcceptUserProgram();
 
-            UVSim.DisplayMemory();
+            Console.WriteLine(sim.FetchRegisterStats());
+
+            Console.WriteLine(sim.FetchMemoryForDisplay());
         }
     }
 }

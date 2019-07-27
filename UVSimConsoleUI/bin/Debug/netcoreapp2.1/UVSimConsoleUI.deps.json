@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "UVSimConsoleUI/1.0.0": {
+        "dependencies": {
+          "UVSimLibrary": "1.0.0"
+        },
         "runtime": {
           "UVSimConsoleUI.dll": {}
+        }
+      },
+      "UVSimLibrary/1.0.0": {
+        "runtime": {
+          "UVSimLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
     "UVSimConsoleUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UVSimLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

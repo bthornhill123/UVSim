@@ -9,3 +9,6 @@ C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1\UVSimConsoleUI.AssemblyInfo.cs
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1\UVSimConsoleUI.dll
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1\UVSimConsoleUI.pdb
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\UVSimLibrary.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\UVSimLibrary.pdb
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1\UVSimConsoleUI.csproj.CopyComplete
