@@ -178,7 +178,7 @@
             this.currentProgramListbox.Location = new System.Drawing.Point(55, 429);
             this.currentProgramListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.currentProgramListbox.Name = "currentProgramListbox";
-            this.currentProgramListbox.Size = new System.Drawing.Size(145, 238);
+            this.currentProgramListbox.Size = new System.Drawing.Size(143, 238);
             this.currentProgramListbox.TabIndex = 14;
             // 
             // runProgramButton

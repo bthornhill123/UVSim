@@ -31,6 +31,8 @@ namespace UVSimWindowsFormsUI
             t.Start();
         }
 
+        private void Populate
+
         private void SubmitCommandDirectButton_Click(object sender, EventArgs e)
         {
             string command = commandValue.Text;
