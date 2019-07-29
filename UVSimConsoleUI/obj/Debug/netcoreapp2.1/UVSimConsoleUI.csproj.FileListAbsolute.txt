@@ -12,3 +12,11 @@ C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\UVSimLibrary.dll
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\UVSimLibrary.pdb
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\obj\Debug\netcoreapp2.1\UVSimConsoleUI.csproj.CopyComplete
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\System.Windows.Forms.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\Accessibility.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\System.Deployment.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\System.Windows.Forms.xml
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\Accessibility.xml
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\System.Deployment.xml
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimConsoleUI\bin\Debug\netcoreapp2.1\System.Runtime.Serialization.Formatters.Soap.xml

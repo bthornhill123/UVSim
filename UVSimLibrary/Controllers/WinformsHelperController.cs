@@ -5,9 +5,9 @@ using UVSimLibrary.Models;
 
 namespace UVSimLibrary.Controllers
 {
-    public class WinformsHelperController
+    public static class WinformsHelperController
     {
-        public List<OperationModel> GetAvailableOperations()
+        public static List<OperationModel> GetAvailableOperations()
         {
             List<OperationModel> output = new List<OperationModel>();
 
@@ -25,6 +25,11 @@ namespace UVSimLibrary.Controllers
             output.Add(new OperationModel { Name = "Halt", OpCode = "43" });
 
             return output;
+        }
+
+        public static void Test(this UVSimModel test)
+        {
+
         }
     }
 }

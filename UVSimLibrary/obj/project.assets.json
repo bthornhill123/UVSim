@@ -179,24 +179,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jaren\\.nuget\\packages\\": {},
+    "C:\\Users\\bthor\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jaren\\Desktop\\JCB\\UVSim\\UVSimLibrary\\UVSimLibrary.csproj",
+      "projectUniqueName": "C:\\Repos\\School\\SoftwareEngineering\\UVSim\\UVSimLibrary\\UVSimLibrary.csproj",
       "projectName": "UVSimLibrary",
-      "projectPath": "C:\\Users\\Jaren\\Desktop\\JCB\\UVSim\\UVSimLibrary\\UVSimLibrary.csproj",
-      "packagesPath": "C:\\Users\\Jaren\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jaren\\Desktop\\JCB\\UVSim\\UVSimLibrary\\obj\\",
+      "projectPath": "C:\\Repos\\School\\SoftwareEngineering\\UVSim\\UVSimLibrary\\UVSimLibrary.csproj",
+      "packagesPath": "C:\\Users\\bthor\\.nuget\\packages\\",
+      "outputPath": "C:\\Repos\\School\\SoftwareEngineering\\UVSim\\UVSimLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jaren\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\bthor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

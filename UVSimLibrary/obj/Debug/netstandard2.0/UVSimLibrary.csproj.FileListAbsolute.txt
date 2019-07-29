@@ -1,4 +1,3 @@
-C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.csprojAssemblyReference.cache
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.csproj.CoreCompileInputs.cache
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.AssemblyInfoInputs.cache
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.AssemblyInfo.cs
@@ -7,3 +6,17 @@ C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\UVSimLibrary.pdb
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.dll
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.pdb
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\System.Windows.Forms.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\System.Security.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\System.Configuration.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\Accessibility.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\System.Deployment.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\System.Windows.Forms.xml
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\System.Security.xml
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\System.Configuration.xml
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\Accessibility.xml
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\System.Deployment.xml
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.xml
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.csproj.CopyComplete
+C:\Repos\School\SoftwareEngineering\UVSim\UVSimLibrary\obj\Debug\netstandard2.0\UVSimLibrary.csprojAssemblyReference.cache

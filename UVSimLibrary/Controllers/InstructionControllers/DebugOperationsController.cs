@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using UVSimLibrary.Models;
+
+namespace UVSimLibrary.Controllers.InstructionControllers
+{
+    public static class DebugOperationsController
+    {
+        //Debugging Operations
+        public static void MemDump(this UVSimModel uvSim)
+        {
+            //Console.WriteLine("\nAccumilator: {0:d2}\nOpcode: {1:d2}\nOperand: {2:d2}\n\nMemory Dump: ", accumulator, opcode, operand);
+            //for (int i = 0; i < MEM_SIZE; i++)
+            //{
+            //    Console.WriteLine("{0:d2}: {1}", i, memory[i]);
+            //}
+        }
+    }
+}

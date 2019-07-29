@@ -51,10 +51,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label1.Location = new System.Drawing.Point(84, 401);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(126, 617);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 25);
+            this.label1.Size = new System.Drawing.Size(123, 38);
             this.label1.TabIndex = 1;
             this.label1.Text = "Program";
             // 
@@ -62,29 +61,26 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label2.Location = new System.Drawing.Point(16, 254);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(24, 390);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 25);
+            this.label2.Size = new System.Drawing.Size(312, 38);
             this.label2.TabIndex = 2;
             this.label2.Text = "The Old-Fashioned Way";
             // 
             // commandValue
             // 
-            this.commandValue.Location = new System.Drawing.Point(143, 291);
-            this.commandValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.commandValue.Location = new System.Drawing.Point(214, 448);
             this.commandValue.Name = "commandValue";
-            this.commandValue.Size = new System.Drawing.Size(116, 20);
+            this.commandValue.Size = new System.Drawing.Size(172, 26);
             this.commandValue.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.label3.Location = new System.Drawing.Point(87, 38);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(130, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(198, 32);
+            this.label3.Size = new System.Drawing.Size(291, 48);
             this.label3.TabIndex = 4;
             this.label3.Text = "Enter Commands";
             // 
@@ -92,20 +88,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label4.Location = new System.Drawing.Point(16, 77);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(24, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 25);
+            this.label4.Size = new System.Drawing.Size(186, 38);
             this.label4.TabIndex = 5;
             this.label4.Text = "The Easy Way";
             // 
             // submitCommandDirectButton
             // 
             this.submitCommandDirectButton.Font = new System.Drawing.Font("Segoe UI", 7.875F);
-            this.submitCommandDirectButton.Location = new System.Drawing.Point(30, 321);
-            this.submitCommandDirectButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.submitCommandDirectButton.Location = new System.Drawing.Point(45, 494);
             this.submitCommandDirectButton.Name = "submitCommandDirectButton";
-            this.submitCommandDirectButton.Size = new System.Drawing.Size(114, 36);
+            this.submitCommandDirectButton.Size = new System.Drawing.Size(171, 55);
             this.submitCommandDirectButton.TabIndex = 6;
             this.submitCommandDirectButton.Text = "Submit Command";
             this.submitCommandDirectButton.UseVisualStyleBackColor = true;
@@ -114,30 +108,28 @@
             // submitCommandEasyButton
             // 
             this.submitCommandEasyButton.Font = new System.Drawing.Font("Segoe UI", 7.875F);
-            this.submitCommandEasyButton.Location = new System.Drawing.Point(30, 190);
-            this.submitCommandEasyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.submitCommandEasyButton.Location = new System.Drawing.Point(45, 292);
             this.submitCommandEasyButton.Name = "submitCommandEasyButton";
-            this.submitCommandEasyButton.Size = new System.Drawing.Size(114, 36);
+            this.submitCommandEasyButton.Size = new System.Drawing.Size(171, 55);
             this.submitCommandEasyButton.TabIndex = 7;
             this.submitCommandEasyButton.Text = "Submit Command";
             this.submitCommandEasyButton.UseVisualStyleBackColor = true;
+            this.submitCommandEasyButton.Click += new System.EventHandler(this.SubmitCommandEasyButton_Click);
             // 
             // operandValue
             // 
-            this.operandValue.Location = new System.Drawing.Point(102, 163);
-            this.operandValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.operandValue.Location = new System.Drawing.Point(153, 250);
             this.operandValue.Name = "operandValue";
-            this.operandValue.Size = new System.Drawing.Size(116, 20);
+            this.operandValue.Size = new System.Drawing.Size(172, 26);
             this.operandValue.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label5.Location = new System.Drawing.Point(27, 159);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(40, 245);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 19);
+            this.label5.Size = new System.Drawing.Size(93, 28);
             this.label5.TabIndex = 10;
             this.label5.Text = "Operand:";
             // 
@@ -145,59 +137,54 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label6.Location = new System.Drawing.Point(27, 124);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(40, 190);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 19);
+            this.label6.Size = new System.Drawing.Size(105, 28);
             this.label6.TabIndex = 11;
             this.label6.Text = "Operation:";
             // 
             // operationsDropdown
             // 
             this.operationsDropdown.FormattingEnabled = true;
-            this.operationsDropdown.Location = new System.Drawing.Point(102, 127);
-            this.operationsDropdown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.operationsDropdown.Location = new System.Drawing.Point(153, 195);
             this.operationsDropdown.Name = "operationsDropdown";
-            this.operationsDropdown.Size = new System.Drawing.Size(116, 21);
+            this.operationsDropdown.Size = new System.Drawing.Size(172, 28);
             this.operationsDropdown.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label7.Location = new System.Drawing.Point(27, 291);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(40, 448);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 19);
+            this.label7.Size = new System.Drawing.Size(157, 28);
             this.label7.TabIndex = 13;
             this.label7.Text = "Enter Command:";
             // 
             // currentProgramListbox
             // 
             this.currentProgramListbox.FormattingEnabled = true;
-            this.currentProgramListbox.Location = new System.Drawing.Point(55, 429);
-            this.currentProgramListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.currentProgramListbox.ItemHeight = 20;
+            this.currentProgramListbox.Location = new System.Drawing.Point(82, 660);
             this.currentProgramListbox.Name = "currentProgramListbox";
-            this.currentProgramListbox.Size = new System.Drawing.Size(143, 238);
+            this.currentProgramListbox.Size = new System.Drawing.Size(212, 364);
             this.currentProgramListbox.TabIndex = 14;
             // 
             // runProgramButton
             // 
             this.runProgramButton.Font = new System.Drawing.Font("Segoe UI", 7.875F);
-            this.runProgramButton.Location = new System.Drawing.Point(55, 675);
-            this.runProgramButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.runProgramButton.Location = new System.Drawing.Point(82, 1038);
             this.runProgramButton.Name = "runProgramButton";
-            this.runProgramButton.Size = new System.Drawing.Size(143, 55);
+            this.runProgramButton.Size = new System.Drawing.Size(214, 85);
             this.runProgramButton.TabIndex = 15;
             this.runProgramButton.Text = "Run Program";
             this.runProgramButton.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(348, 96);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Location = new System.Drawing.Point(522, 148);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(332, 571);
+            this.richTextBox1.Size = new System.Drawing.Size(496, 876);
             this.richTextBox1.TabIndex = 16;
             this.richTextBox1.Text = "";
             // 
@@ -205,18 +192,17 @@
             // 
             this.consoleLabel.AutoSize = true;
             this.consoleLabel.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.consoleLabel.Location = new System.Drawing.Point(470, 68);
-            this.consoleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.consoleLabel.Location = new System.Drawing.Point(705, 105);
             this.consoleLabel.Name = "consoleLabel";
-            this.consoleLabel.Size = new System.Drawing.Size(80, 25);
+            this.consoleLabel.Size = new System.Drawing.Size(116, 38);
             this.consoleLabel.TabIndex = 17;
             this.consoleLabel.Text = "Console";
             // 
             // UVSimDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(729, 749);
+            this.ClientSize = new System.Drawing.Size(1094, 1152);
             this.Controls.Add(this.consoleLabel);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.runProgramButton);
@@ -234,7 +220,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UVSimDashboard";
             this.Text = "UVSim";
             this.ResumeLayout(false);
