@@ -13,16 +13,16 @@ namespace UVSimWindowsFormsUI.Controllers.InstructionControllers
         public static void Read(this UVSimModel uvSim, string operand)
         {
             string input = Prompt.ShowDialog("Enter an integer:", "Read Operation");
+            input = input.PadLeft(4, '0');
 
             uvSim.Memory[int.Parse(operand)] = input;
 
-            // TODO - Output "Enter an integer: {input}" to the output textblock
-            uvSim.Output += "Enter an integer: " + input + "\n";
+            uvSim.OutputTextblock.Text += "Enter an integer: " + input + "\n";
         }
         public static void Write(this UVSimModel uvSim, string operand)
         {
             //Console.WriteLine("Contents of location {0}: {1}", operand, memory[int.Parse(operand)]);
-            uvSim.Output += "Contentis of location " + operand + " is " + uvSim.Memory[int.Parse(operand)];
+            //uvSim.Output += "Contentis of location " + operand + " is " + uvSim.Memory[int.Parse(operand)];
         }
 
         //Load/Store Operations

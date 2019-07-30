@@ -10,6 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UVSimWindowsFormsUI.Controllers;
+using UVSimWindowsFormsUI.Controllers.InstructionControllers;
 using UVSimWindowsFormsUI.Models;
 
 // TODO - Add in functionality to delete last command (this will need to decrement the currentMemoryLocation)
@@ -30,13 +31,14 @@ namespace UVSimWindowsFormsUI
             PopulateOperationsListbox();
 
             uvSim = new UVSimModel(memorySize);
+            uvSim.OutputTextblock = outputTextblock;
+            uvSim.MemoryTextblock = memoryTextblock;
 
-            Thread t = new Thread(() =>
-            {
-                Thread.Sleep(500);
-                uvSim.DisplayGreeting();
-            });
-            t.Start();
+            currentProgramListbox.DataSource = null;
+            currentProgramListbox.DataSource = uvSim.Memory;
+
+
+            uvSim.DisplayGreeting();
         }
 
         private void PopulateOperationsListbox()
@@ -47,12 +49,7 @@ namespace UVSimWindowsFormsUI
             operationsDropdown.DisplayMember = nameof(OperationModel.Name);
         }
 
-        private void SubmitCommandDirectButton_Click(object sender, EventArgs e)
-        {
-            string command = commandValue.Text;
-
-            AddCommandToListbox(command);
-        }
+       
 
         private void SubmitCommandEasyButton_Click(object sender, EventArgs e)
         {
@@ -63,25 +60,36 @@ namespace UVSimWindowsFormsUI
             string command = operation + operand;
 
             AddCommandToListbox(command);
+
+            //uvSim.Read("10");
         }
 
         public void AddCommandToListbox(string command)
         {
-            commands.Add(command);
+            uvSim.Memory[currentMemoryLocation] = command;
+            //commands.Add(command);
 
             currentProgramListbox.DataSource = null;
-            currentProgramListbox.DataSource = commands;
+            currentProgramListbox.DataSource = uvSim.Memory;
 
             currentMemoryLocation++;
         }
 
         private void RunProgramButton_Click(object sender, EventArgs e)
         {
+            uvSim.RunProgram();
 
+            uvSim.DisplayMemory();
+        }
 
-            memoryTextblock.Text = uvSim.GetMemoryDump();
+        private void DumpMemoryButton_Click(object sender, EventArgs e)
+        {
+            uvSim.DisplayMemory();
+        }
 
-            outputTextblock.Text = uvSim.Output;
+        private void ClearOutputButton_Click(object sender, EventArgs e)
+        {
+            uvSim.OutputTextblock.Text = "";
         }
     }
 }

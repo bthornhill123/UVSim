@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UVSimWindowsFormsUI.Controllers.InstructionControllers;
 using UVSimWindowsFormsUI.Models;
 
 namespace UVSimWindowsFormsUI.Controllers
@@ -18,9 +19,8 @@ namespace UVSimWindowsFormsUI.Controllers
             greeting += "Please enter instructions one data-word at a time.\n";
             greeting += "Data words are positve or negative 4 digit strings.\n";
             greeting += "When you are finished, enter -99999 to stop and run program.\n";
-            greeting += "Please enter commands:\n";
 
-            MessageBox.Show(greeting);
+            uvSim.OutputTextblock.Text += greeting;
         }
 
         public static List<OperationModel> GetAvailableOperations(this UVSimModel uvSim)
@@ -68,9 +68,11 @@ namespace UVSimWindowsFormsUI.Controllers
         //    }
         //}
 
-        public static void RunProgram(this UVSimModel uvSim, List<string> program)
+        public static void RunProgram(this UVSimModel uvSim)
         {
-            foreach (var instruction in program)
+            List<string> instructions = new List<string>();
+            instructions = uvSim.Memory.ToList();
+            foreach (var instruction in instructions)
             {
                 uvSim.RunCommand(instruction);
             }
@@ -80,45 +82,46 @@ namespace UVSimWindowsFormsUI.Controllers
         {
             string operation = instruction.Substring(0, 2);
             string operand = instruction.Substring(2, 2);
-            //switch (operation)
-            //{
-            //    case "10":
-            //        Read(operand);
-            //        break;
-            //    case "11":
-            //        Write(operand);
-            //        break;
-            //    case "20":
-            //        Load(operand);
-            //        break;
-            //    case "21":
-            //        Store(operand);
-            //        break;
-            //    case "30":
-            //        Add(operand);
-            //        break;
-            //    case "31":
-            //        Subtract(operand);
-            //        break;
-            //    case "32":
-            //        Divide(operand);
-            //        break;
-            //    case "33":
-            //        Multiply(operand);
-            //        break;
-            //    case "40":
-            //        Branch(operand);
-            //        break;
-            //    case "41":
-            //        BranchNeg(operand);
-            //        break;
-            //    case "42":
-            //        BranchZero(operand);
-            //        break;
-            //    case "43":
-            //        Halt();
-            //        break;
-            //}
+
+            switch (operation)
+            {
+                case "10":
+                    uvSim.Read(operand);
+                    break;
+                case "11":
+                    uvSim.Write(operand);
+                    break;
+                case "20":
+                    uvSim.Load(operand);
+                    break;
+                case "21":
+                    uvSim.Store(operand);
+                    break;
+                case "30":
+                    uvSim.Add(operand);
+                    break;
+                case "31":
+                    uvSim.Subtract(operand);
+                    break;
+                case "32":
+                    uvSim.Divide(operand);
+                    break;
+                case "33":
+                    uvSim.Multiply(operand);
+                    break;
+                case "40":
+                    uvSim.Branch(operand);
+                    break;
+                case "41":
+                    uvSim.BranchNeg(operand);
+                    break;
+                case "42":
+                    uvSim.BranchZero(operand);
+                    break;
+                case "43":
+                    uvSim.Halt();
+                    break;
+            }
         }
 
         public static void DisplayRegisterStats()
@@ -126,22 +129,21 @@ namespace UVSimWindowsFormsUI.Controllers
 
         }
 
-        public static string GetMemoryDump(this UVSimModel uvSim)
+        public static void DisplayMemory(this UVSimModel uvSim)
         {
             string memory = "";
+            int memoryLocation = 0;
 
             foreach (var word in uvSim.Memory)
             {
-                memory += word + "\n";
+                memory += memoryLocation.ToString().PadLeft(3, '0') + " | " + word + "\n";
+                memoryLocation++;
             }
 
-            return memory;
+            uvSim.MemoryTextblock.Text = memory;
         }
 
-        public static string DisplayOutput(this UVSimModel uvSim)
-        {
-            return uvSim.Output;
-        }
+        
 
 
     }
