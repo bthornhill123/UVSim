@@ -43,8 +43,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.currentProgramListbox = new System.Windows.Forms.ListBox();
             this.runProgramButton = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.memoryTextblock = new System.Windows.Forms.RichTextBox();
             this.consoleLabel = new System.Windows.Forms.Label();
+            this.outputTextblock = new System.Windows.Forms.RichTextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -179,32 +182,63 @@
             this.runProgramButton.TabIndex = 15;
             this.runProgramButton.Text = "Run Program";
             this.runProgramButton.UseVisualStyleBackColor = true;
+            this.runProgramButton.Click += new System.EventHandler(this.RunProgramButton_Click);
             // 
-            // richTextBox1
+            // memoryTextblock
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(522, 148);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(496, 876);
-            this.richTextBox1.TabIndex = 16;
-            this.richTextBox1.Text = "";
+            this.memoryTextblock.Location = new System.Drawing.Point(535, 540);
+            this.memoryTextblock.Name = "memoryTextblock";
+            this.memoryTextblock.Size = new System.Drawing.Size(496, 527);
+            this.memoryTextblock.TabIndex = 16;
+            this.memoryTextblock.Text = "";
             // 
             // consoleLabel
             // 
             this.consoleLabel.AutoSize = true;
             this.consoleLabel.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.consoleLabel.Location = new System.Drawing.Point(705, 105);
+            this.consoleLabel.Location = new System.Drawing.Point(718, 497);
             this.consoleLabel.Name = "consoleLabel";
-            this.consoleLabel.Size = new System.Drawing.Size(116, 38);
+            this.consoleLabel.Size = new System.Drawing.Size(121, 38);
             this.consoleLabel.TabIndex = 17;
-            this.consoleLabel.Text = "Console";
+            this.consoleLabel.Text = "Memory";
+            // 
+            // outputTextblock
+            // 
+            this.outputTextblock.Location = new System.Drawing.Point(535, 165);
+            this.outputTextblock.Name = "outputTextblock";
+            this.outputTextblock.Size = new System.Drawing.Size(496, 252);
+            this.outputTextblock.TabIndex = 18;
+            this.outputTextblock.Text = "";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label8.Location = new System.Drawing.Point(733, 124);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(104, 38);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Output";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(535, 1073);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(167, 54);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Dump Memory";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // UVSimDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 1152);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.outputTextblock);
             this.Controls.Add(this.consoleLabel);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.memoryTextblock);
             this.Controls.Add(this.runProgramButton);
             this.Controls.Add(this.currentProgramListbox);
             this.Controls.Add(this.label7);
@@ -242,7 +276,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ListBox currentProgramListbox;
         private System.Windows.Forms.Button runProgramButton;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox memoryTextblock;
         private System.Windows.Forms.Label consoleLabel;
+        private System.Windows.Forms.RichTextBox outputTextblock;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
     }
 }

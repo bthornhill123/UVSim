@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using UVSimLibrary.Models;
+using UVSimWindowsFormsUI.Models;
 
-namespace UVSimLibrary.Controllers
+namespace UVSimWindowsFormsUI.Controllers
 {
     public static class UVSimController
     {
@@ -76,7 +78,7 @@ namespace UVSimLibrary.Controllers
 
         private static void RunCommand(this UVSimModel uvSim, string instruction)
         {
-            string operation = instruction.Substring(0,2);
+            string operation = instruction.Substring(0, 2);
             string operand = instruction.Substring(2, 2);
             //switch (operation)
             //{
@@ -141,6 +143,6 @@ namespace UVSimLibrary.Controllers
             return uvSim.Output;
         }
 
-       
+
     }
 }

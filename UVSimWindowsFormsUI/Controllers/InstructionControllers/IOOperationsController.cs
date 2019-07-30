@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UVSimLibrary.HelperClasses;
-using UVSimLibrary.Models;
 using System.Linq;
+using UVSimWindowsFormsUI.Models;
+using UVSimWindowsFormsUI.HelperClasses;
 
-namespace UVSimLibrary.Controllers.InstructionControllers
+namespace UVSimWindowsFormsUI.Controllers.InstructionControllers
 {
     public static class IOOperationsController
     {

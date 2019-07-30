@@ -36,9 +36,10 @@
             // 
             // launchButton
             // 
-            this.launchButton.Location = new System.Drawing.Point(242, 154);
+            this.launchButton.Location = new System.Drawing.Point(182, 123);
+            this.launchButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.launchButton.Name = "launchButton";
-            this.launchButton.Size = new System.Drawing.Size(290, 109);
+            this.launchButton.Size = new System.Drawing.Size(218, 87);
             this.launchButton.TabIndex = 0;
             this.launchButton.Text = "Launch App";
             this.launchButton.UseVisualStyleBackColor = true;
@@ -47,29 +48,32 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(213, 291);
+            this.label1.Location = new System.Drawing.Point(160, 233);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 25);
+            this.label1.Size = new System.Drawing.Size(153, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Select Memory Size:";
             // 
             // memorySizeText
             // 
-            this.memorySizeText.Location = new System.Drawing.Point(428, 288);
+            this.memorySizeText.Location = new System.Drawing.Point(321, 230);
+            this.memorySizeText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.memorySizeText.Name = "memorySizeText";
-            this.memorySizeText.Size = new System.Drawing.Size(115, 31);
+            this.memorySizeText.Size = new System.Drawing.Size(87, 26);
             this.memorySizeText.TabIndex = 2;
-            this.memorySizeText.Text = "100";
+            this.memorySizeText.Text = "1000";
             // 
             // UVSimForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 493);
+            this.ClientSize = new System.Drawing.Size(579, 394);
             this.Controls.Add(this.memorySizeText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.launchButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UVSimForm";
             this.Text = "UVSim";
             this.ResumeLayout(false);

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using UVSimLibrary.Models;
+using System.Threading.Tasks;
+using UVSimWindowsFormsUI.Models;
 
-namespace UVSimLibrary.Controllers.InstructionControllers
+namespace UVSimWindowsFormsUI.Controllers.InstructionControllers
 {
     public static class ALUOperationsController
     {

@@ -47,6 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\InstructionControllers\ALUOperationsController.cs" />
+    <Compile Include="Controllers\InstructionControllers\ControlOperationsController.cs" />
+    <Compile Include="Controllers\InstructionControllers\DebugOperationsController.cs" />
+    <Compile Include="Controllers\InstructionControllers\IOOperationsController.cs" />
+    <Compile Include="Controllers\UVSimController.cs" />
+    <Compile Include="HelperClasses\Prompt.cs" />
+    <Compile Include="Models\OperationModel.cs" />
+    <Compile Include="Models\UVSimModel.cs" />
     <Compile Include="UVSimDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,12 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UVSimLibrary\UVSimLibrary.csproj">
-      <Project>{99d99174-83da-428e-b968-fcedc511afe8}</Project>
-      <Name>UVSimLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
