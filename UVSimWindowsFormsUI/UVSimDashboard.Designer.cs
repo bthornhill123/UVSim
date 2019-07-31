@@ -64,7 +64,7 @@
             // 
             // submitCommandEasyButton
             // 
-            this.submitCommandEasyButton.BackColor = System.Drawing.Color.Honeydew;
+            this.submitCommandEasyButton.BackColor = System.Drawing.Color.PaleGreen;
             this.submitCommandEasyButton.Font = new System.Drawing.Font("Segoe UI", 7.875F);
             this.submitCommandEasyButton.Location = new System.Drawing.Point(43, 424);
             this.submitCommandEasyButton.Name = "submitCommandEasyButton";
@@ -120,7 +120,7 @@
             // 
             // runProgramButton
             // 
-            this.runProgramButton.BackColor = System.Drawing.Color.Honeydew;
+            this.runProgramButton.BackColor = System.Drawing.Color.PaleGreen;
             this.runProgramButton.Font = new System.Drawing.Font("Segoe UI", 7.875F);
             this.runProgramButton.Location = new System.Drawing.Point(43, 897);
             this.runProgramButton.Name = "runProgramButton";
@@ -168,7 +168,7 @@
             // 
             // dumpMemoryButton
             // 
-            this.dumpMemoryButton.BackColor = System.Drawing.Color.Honeydew;
+            this.dumpMemoryButton.BackColor = System.Drawing.Color.PaleGreen;
             this.dumpMemoryButton.Location = new System.Drawing.Point(483, 990);
             this.dumpMemoryButton.Name = "dumpMemoryButton";
             this.dumpMemoryButton.Size = new System.Drawing.Size(167, 54);
@@ -179,7 +179,7 @@
             // 
             // clearOutputButton
             // 
-            this.clearOutputButton.BackColor = System.Drawing.Color.Honeydew;
+            this.clearOutputButton.BackColor = System.Drawing.Color.PaleGreen;
             this.clearOutputButton.Location = new System.Drawing.Point(890, 467);
             this.clearOutputButton.Name = "clearOutputButton";
             this.clearOutputButton.Size = new System.Drawing.Size(78, 35);
@@ -190,7 +190,7 @@
             // 
             // resetProgramButton
             // 
-            this.resetProgramButton.BackColor = System.Drawing.Color.Honeydew;
+            this.resetProgramButton.BackColor = System.Drawing.Color.PaleGreen;
             this.resetProgramButton.Font = new System.Drawing.Font("Segoe UI", 7.875F);
             this.resetProgramButton.Location = new System.Drawing.Point(43, 953);
             this.resetProgramButton.Name = "resetProgramButton";
@@ -252,7 +252,7 @@
             // 
             // displayUserManual
             // 
-            this.displayUserManual.BackColor = System.Drawing.Color.Honeydew;
+            this.displayUserManual.BackColor = System.Drawing.Color.PaleGreen;
             this.displayUserManual.Font = new System.Drawing.Font("Segoe UI", 7.875F);
             this.displayUserManual.Location = new System.Drawing.Point(445, 108);
             this.displayUserManual.Name = "displayUserManual";

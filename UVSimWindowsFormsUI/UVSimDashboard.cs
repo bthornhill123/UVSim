@@ -78,7 +78,7 @@ namespace UVSimWindowsFormsUI
         private void RunProgramButton_Click(object sender, EventArgs e)
         {
             runProgramButton.Text = "Run Program";
-            runProgramButton.BackColor = Color.Honeydew;
+            runProgramButton.BackColor = Color.PaleGreen;
 
             try
             {
