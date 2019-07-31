@@ -10,10 +10,6 @@ namespace UVSimWindowsFormsUI.Controllers.InstructionControllers
     public static class ALUOperationsController
     {
         //ALU
-        public static void Add(this UVSimModel uvSim, string operand)
-        {
-            uvSim.Accumulator += int.Parse(uvSim.Memory[int.Parse(operand)]);
-        }
         public static void Subtract(this UVSimModel uvSim, string operand)
         {
             uvSim.Accumulator -= int.Parse(uvSim.Memory[int.Parse(operand)]);
@@ -25,6 +21,21 @@ namespace UVSimWindowsFormsUI.Controllers.InstructionControllers
         public static void Multiply(this UVSimModel uvSim, string operand)
         {
             uvSim.Accumulator *= int.Parse(uvSim.Memory[int.Parse(operand)]);
+        }
+
+        //Cameron
+        public static void Add(this UVSimModel uvSim, string operand)
+        {
+            int currentAccumulator = uvSim.Accumulator;
+            int theOperand = int.Parse(operand);
+            int Carry;
+            while (theOperand != 0)
+            {
+                Carry = currentAccumulator & theOperand;
+                currentAccumulator ^= theOperand;
+                theOperand = Carry << 1;
+            }
+            uvSim.Accumulator += currentAccumulator;
         }
     }
 }
