@@ -36,6 +36,8 @@ namespace UVSimWindowsFormsUI.Controllers
             output.Add(new OperationModel { Name = "Subtract", OpCode = "31" });
             output.Add(new OperationModel { Name = "Divide", OpCode = "32" });
             output.Add(new OperationModel { Name = "Multiply", OpCode = "33" });
+            output.Add(new OperationModel { Name = "Remainder", OpCode = "34" });
+            output.Add(new OperationModel { Name = "Exponent", OpCode = "35" });
             output.Add(new OperationModel { Name = "Branch", OpCode = "40" });
             output.Add(new OperationModel { Name = "BranchNeg", OpCode = "41" });
             output.Add(new OperationModel { Name = "BranchZero", OpCode = "42" });
@@ -86,6 +88,12 @@ namespace UVSimWindowsFormsUI.Controllers
                     break;
                 case "33":
                     uvSim.Multiply(operand);
+                    break;
+                case "34":
+                    uvSim.Remainder(operand);
+                    break;
+                case "35":
+                    uvSim.Exponent(operand);
                     break;
                 case "40":
                     uvSim.Branch(operand);
