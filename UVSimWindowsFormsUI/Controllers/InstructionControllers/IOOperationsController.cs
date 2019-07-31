@@ -21,8 +21,10 @@ namespace UVSimWindowsFormsUI.Controllers.InstructionControllers
         }
         public static void Write(this UVSimModel uvSim, string operand)
         {
-            //Console.WriteLine("Contents of location {0}: {1}", operand, memory[int.Parse(operand)]);
-            //uvSim.Output += "Contentis of location " + operand + " is " + uvSim.Memory[int.Parse(operand)];
+            //Jaren Flaker
+            string output = "Output: " + uvSim.Memory[int.Parse(operand)];
+
+            uvSim.OutputTextblock.Text += output;
         }
 
         //Load/Store Operations

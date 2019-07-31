@@ -9,3 +9,14 @@ C:\Repos\School\SoftwareEngineering\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWin
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWindowsFormsUI.exe
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWindowsFormsUI.pdb
 C:\Repos\School\SoftwareEngineering\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWindowsFormsUI.UVSimDashboard.resources
+C:\Users\Jaren\Desktop\UV SIM\UVSim\UVSimWindowsFormsUI\bin\Debug\UVSimWindowsFormsUI.exe.config
+C:\Users\Jaren\Desktop\UV SIM\UVSim\UVSimWindowsFormsUI\bin\Debug\UVSimWindowsFormsUI.exe
+C:\Users\Jaren\Desktop\UV SIM\UVSim\UVSimWindowsFormsUI\bin\Debug\UVSimWindowsFormsUI.pdb
+C:\Users\Jaren\Desktop\UV SIM\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWindowsFormsUI.csprojAssemblyReference.cache
+C:\Users\Jaren\Desktop\UV SIM\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWindowsFormsUI.UVSimDashboard.resources
+C:\Users\Jaren\Desktop\UV SIM\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWindowsFormsUI.UVSimForm.resources
+C:\Users\Jaren\Desktop\UV SIM\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWindowsFormsUI.Properties.Resources.resources
+C:\Users\Jaren\Desktop\UV SIM\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWindowsFormsUI.csproj.GenerateResource.cache
+C:\Users\Jaren\Desktop\UV SIM\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWindowsFormsUI.csproj.CoreCompileInputs.cache
+C:\Users\Jaren\Desktop\UV SIM\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWindowsFormsUI.exe
+C:\Users\Jaren\Desktop\UV SIM\UVSim\UVSimWindowsFormsUI\obj\Debug\UVSimWindowsFormsUI.pdb
