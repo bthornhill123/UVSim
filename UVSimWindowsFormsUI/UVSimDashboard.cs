@@ -34,8 +34,7 @@ namespace UVSimWindowsFormsUI
             uvSim.OutputTextblock = outputTextblock;
             uvSim.MemoryTextblock = memoryTextblock;
 
-            currentProgramListbox.DataSource = null;
-            currentProgramListbox.DataSource = uvSim.Memory;
+            RefreshMemoryListbox();
 
 
             uvSim.DisplayGreeting();
@@ -49,37 +48,54 @@ namespace UVSimWindowsFormsUI
             operationsDropdown.DisplayMember = nameof(OperationModel.Name);
         }
 
-       
-
         private void SubmitCommandEasyButton_Click(object sender, EventArgs e)
         {
             OperationModel selectedOperation = (OperationModel)operationsDropdown.SelectedItem;
 
             string operation = selectedOperation.OpCode;
-            string operand = operandValue.Text;
-            string command = operation + operand;
 
-            AddCommandToListbox(command);
+            bool isBreakpoint = shouldBreakHere.Checked;
+            string breakPoint = (isBreakpoint) ? "11" : "00";
 
-            //uvSim.Read("10");
+            string operand = operandValue.Text.PadLeft(4, '0');
+
+            string command = operation + breakPoint + operand;
+
+            if (command.Length > 8)
+                MessageBox.Show("Error adding command.\n The specified operand couldn't be processed.");
+            else
+                AddCommandToListbox(command);
         }
 
         public void AddCommandToListbox(string command)
         {
-            uvSim.Memory[currentMemoryLocation] = command;
-            //commands.Add(command);
+            uvSim.Memory[currentMemoryLocation++] = command.Substring(0, 4);
+            uvSim.Memory[currentMemoryLocation++] = command.Substring(4, 4);
 
-            currentProgramListbox.DataSource = null;
-            currentProgramListbox.DataSource = uvSim.Memory;
-
-            currentMemoryLocation++;
+            RefreshMemoryListbox();
         }
 
         private void RunProgramButton_Click(object sender, EventArgs e)
         {
-            uvSim.RunProgram();
+            runProgramButton.Text = "Run Program";
+            runProgramButton.BackColor = Color.Honeydew;
 
-            uvSim.DisplayMemory();
+            try
+            {
+                uvSim.RunProgram();
+                uvSim.ProgramCounter = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                runProgramButton.Text = "Continue";
+                runProgramButton.BackColor = Color.LightYellow;
+            }
+            finally
+            {
+                uvSim.DisplayMemory();
+                uvSim.DisplayRegisterStats();
+            }
         }
 
         private void DumpMemoryButton_Click(object sender, EventArgs e)
@@ -92,5 +108,26 @@ namespace UVSimWindowsFormsUI
             uvSim.OutputTextblock.Text = "";
         }
 
+        private void ResetProgramButton_Click(object sender, EventArgs e)
+        {
+            uvSim.InitializeMemory();
+            currentMemoryLocation = 0;
+            RefreshMemoryListbox();
+        }
+
+        private void RefreshMemoryListbox()
+        {
+            currentProgramListbox.DataSource = null;
+            currentProgramListbox.DataSource = uvSim.Memory;
+        }
+
+        private void DisplayUserManual_Click(object sender, EventArgs e)
+        {
+            string userManual = "";
+
+            // TODO - Display a detailed user manual to the user
+
+            outputTextblock.Text = userManual;
+        }
     }
 }

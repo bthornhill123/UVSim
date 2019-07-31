@@ -11,6 +11,7 @@ namespace UVSimWindowsFormsUI.Controllers
 {
     public static class UVSimController
     {
+        // Ben Thornhill
         public static void DisplayGreeting(this UVSimModel uvSim)
         {
             string greeting = "";
@@ -24,6 +25,7 @@ namespace UVSimWindowsFormsUI.Controllers
             uvSim.OutputTextblock.Text += greeting;
         }
 
+        // Jaren Flaker
         public static List<OperationModel> GetAvailableOperations(this UVSimModel uvSim)
         {
             List<OperationModel> output = new List<OperationModel>();
@@ -46,22 +48,40 @@ namespace UVSimWindowsFormsUI.Controllers
             return output;
         }
 
+        // Ben Thornhill
         public static void RunProgram(this UVSimModel uvSim)
         {
             //Changed so program will run untill a halt command or reaches end of memory 
             while (uvSim.ProgramCounter != -666 && uvSim.ProgramCounter < uvSim.MemorySize)
             {
-                uvSim.ProgramCounter++;
-                uvSim.RunCommand(uvSim.Memory[uvSim.ProgramCounter - 1]);
+                string firstWord = uvSim.Memory[uvSim.ProgramCounter];
+                string secondWord = uvSim.Memory[uvSim.ProgramCounter + 1];
+                string fullInstruction = firstWord + secondWord;
+
+                try
+                {
+                    uvSim.RunCommand(fullInstruction);
+                }
+                catch 
+                {
+                    string firstWordWithoutBreakpoint = firstWord.Substring(0, 2) + "00";
+                    uvSim.Memory[uvSim.ProgramCounter] = firstWordWithoutBreakpoint;
+                    throw;
+                }
+
+                uvSim.ProgramCounter += 2;
             }
-            DisplayMemory(uvSim);
-            uvSim.ProgramCounter = 0;
         }
 
+        // Ben Thornhill
         private static void RunCommand(this UVSimModel uvSim, string instruction)
         {
+            string breakPoint = instruction.Substring(2, 2);
+            if (breakPoint == "11")
+                throw new Exception("Breakpoint was triggered.\n Please select 'Continue' to resume execution");
+
             string operation = instruction.Substring(0, 2);
-            string operand = instruction.Substring(2, 2);
+            string operand = instruction.Substring(4, 4);
 
             switch (operation)
             {
@@ -110,15 +130,16 @@ namespace UVSimWindowsFormsUI.Controllers
             }
         }
 
+        // Cameron Prestera
         public static void DisplayRegisterStats(this UVSimModel uvSim)
         {
             //Jaren Flaker 
-            //Todo - Display to output screen after program has finished running
             uvSim.OutputTextblock.Text += $"Accumilator: {uvSim.Accumulator}\n";   
             uvSim.OutputTextblock.Text += $"Program Counter: {uvSim.ProgramCounter}\n";
 
         }
 
+        // Cameron Prestera
         public static void DisplayMemory(this UVSimModel uvSim)
         {
             string memory = "";
@@ -132,9 +153,5 @@ namespace UVSimWindowsFormsUI.Controllers
 
             uvSim.MemoryTextblock.Text = memory;
         }
-
-        
-
-
     }
 }

@@ -50,7 +50,6 @@
     <Compile Include="Controllers\InstructionControllers\ALUOperationsController.cs" />
     <Compile Include="Controllers\InstructionControllers\ArithmaticLogicUnit.cs" />
     <Compile Include="Controllers\InstructionControllers\ControlOperationsController.cs" />
-    <Compile Include="Controllers\InstructionControllers\DebugOperationsController.cs" />
     <Compile Include="Controllers\InstructionControllers\IOOperationsController.cs" />
     <Compile Include="Controllers\UVSimController.cs" />
     <Compile Include="HelperClasses\Prompt.cs" />

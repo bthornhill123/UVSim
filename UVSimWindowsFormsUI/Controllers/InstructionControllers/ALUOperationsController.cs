@@ -9,55 +9,40 @@ namespace UVSimWindowsFormsUI.Controllers.InstructionControllers
 {
     public static class ALUOperationsController
     {
-        //ALU
+        // Cameron Prestera
         public static void Subtract(this UVSimModel uvSim, string operand)
         {
             uvSim.Accumulator -= int.Parse(uvSim.Memory[int.Parse(operand)]);
         }
+
+        // Cameron Prestera
         public static void Divide(this UVSimModel uvSim, string operand)
         {
             uvSim.Accumulator /= int.Parse(uvSim.Memory[int.Parse(operand)]);
         }
+        // Cameron Prestera
         public static void Multiply(this UVSimModel uvSim, string operand)
         {
             uvSim.Accumulator *= int.Parse(uvSim.Memory[int.Parse(operand)]);
         }
 
+        // Cameron Prestera
         public static void Add(this UVSimModel uvSim, string operand)
         {
             uvSim.Accumulator += int.Parse(uvSim.Memory[int.Parse(operand)]);
-            /*
-                int currentAccumulator = uvSim.Accumulator;
-                int theOperand = int.Parse(operand);
-                int Carry;
-                while (theOperand != 0)
-                {
-                    Carry = currentAccumulator & theOperand;
-                    currentAccumulator ^= theOperand;
-                    theOperand = Carry << 1;
-                }
-                uvSim.Accumulator += currentAccumulator;
-            */
-
         }
 
         //Jaren Flaker
         public static void Remainder(this UVSimModel uvSim, string operand)
         {
             uvSim.Accumulator %= int.Parse(uvSim.Memory[int.Parse(operand)]);
-
         }
 
         //Jaren Flaker
         public static void Exponent(this UVSimModel uvSim, string operand)
         {
             int exponent = int.Parse (uvSim.Memory[int.Parse(operand)]);
-            int temp = 1;
-            for (int i = 0; i < exponent; i++)
-            {
-                temp *= uvSim.Accumulator;
-            }
-            uvSim.Accumulator = temp;
+            uvSim.Accumulator = (int)Math.Pow((double)uvSim.Accumulator, (double)exponent);
         }
 
     }

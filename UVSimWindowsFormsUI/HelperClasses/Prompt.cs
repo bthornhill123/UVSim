@@ -7,13 +7,14 @@ using System.Windows.Forms;
 
 namespace UVSimWindowsFormsUI.HelperClasses
 {
+    // Ben Thornhill
     public static class Prompt
     {
         public static string ShowDialog(string text, string caption)
         {
             Form prompt = new Form()
             {
-                Width = 500,
+                Width = 250,
                 Height = 150,
                 FormBorderStyle = FormBorderStyle.FixedDialog,
                 Text = caption,

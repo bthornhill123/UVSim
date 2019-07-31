@@ -17,11 +17,15 @@ namespace UVSimWindowsFormsUI
             InitializeComponent();
         }
 
+        // Ben Thornhill
         private void LaunchButton_Click(object sender, EventArgs e)
         {
             if(int.TryParse(memorySizeText.Text, out int result) == false)
             {
-                
+                MessageBox.Show("Please enter a valid memory size.");
+            }
+            else if (result > 1000){
+                MessageBox.Show("Memory size is only supported currently up to 1000.");
             }
             else
             {

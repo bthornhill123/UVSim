@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace UVSimWindowsFormsUI.Models
 {
+    // Cameron Prestera
     public class OperationModel
     {
         public string Name { get; set; }

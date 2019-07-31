@@ -16,17 +16,23 @@ namespace UVSimWindowsFormsUI.Models
         public RichTextBox OutputTextblock { get; set; }
         public RichTextBox MemoryTextblock { get; set; }
 
-
+        // Ben Thornhill
         public UVSimModel(int memorySize = 1000)
         {
             MemorySize = memorySize;
             Memory = new List<string>();
+            InitializeMemory();
+        }
+
+        // Ben Thornhill
+        public void InitializeMemory()
+        {
+            Memory.Clear();
 
             for (int i = 0; i < MemorySize; i++)
             {
                 Memory.Add("0000");
             }
-
         }
     }
 }
