@@ -16,9 +16,10 @@ namespace UVSimWindowsFormsUI.Controllers
             string greeting = "";
 
             greeting += "Welcome to JCB's UV Simulator!\n";
-            greeting += "Please enter instructions one data-word at a time.\n";
-            greeting += "Data words are positve or negative 4 digit strings.\n";
-            greeting += "When you are finished, enter -99999 to stop and run program.\n";
+            greeting += "---------------------------------------------------------\n\n";
+
+            greeting += "Select Command from the operation list and enter memory location you would like to use.\n\n";
+            greeting += "If you would like to run more than one simmulator at a time you can use the launch button in the previous window.\n\n";
 
             uvSim.OutputTextblock.Text += greeting;
         }
@@ -43,31 +44,6 @@ namespace UVSimWindowsFormsUI.Controllers
             return output;
         }
 
-        //public void AcceptUserProgram()
-        //{
-
-        //    int memoryLocation = 0;
-        //    string response;
-
-        //    do // User is still entering commands
-        //    {
-        //        //Keep accepting commands
-        //        Console.Write(memoryLocation + " ? ");
-        //        response = Console.ReadLine();
-
-        //        string operation = response.Substring(0, 2);
-        //        string operand = response.Substring(2, 2);
-
-        //        memory.Add(new WordModel { MemoryLocation = memoryLocation++, Operation = operation, Operand = operand });
-        //    } while (response != "9999");
-
-        //    foreach (var word in memory)
-        //    {
-        //        RunCommand(word.Operation, word.Operand);
-        //        pc++;
-        //    }
-        //}
-
         public static void RunProgram(this UVSimModel uvSim)
         {
             //Changed so program will run untill a halt command or reaches end of memory 
@@ -76,6 +52,7 @@ namespace UVSimWindowsFormsUI.Controllers
                 uvSim.ProgramCounter++;
                 uvSim.RunCommand(uvSim.Memory[uvSim.ProgramCounter - 1]);
             }
+            DisplayMemory(uvSim);
             uvSim.ProgramCounter = 0;
         }
 
@@ -125,8 +102,12 @@ namespace UVSimWindowsFormsUI.Controllers
             }
         }
 
-        public static void DisplayRegisterStats()
+        public static void DisplayRegisterStats(this UVSimModel uvSim)
         {
+            //Jaren Flaker 
+            //Todo - Display to output screen after program has finished running
+            uvSim.OutputTextblock.Text += $"Accumilator: {uvSim.Accumulator}\n";   
+            uvSim.OutputTextblock.Text += $"Program Counter: {uvSim.ProgramCounter}\n";
 
         }
 
