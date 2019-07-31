@@ -70,12 +70,13 @@ namespace UVSimWindowsFormsUI.Controllers
 
         public static void RunProgram(this UVSimModel uvSim)
         {
-            List<string> instructions = new List<string>();
-            instructions = uvSim.Memory.ToList();
-            foreach (var instruction in instructions)
+            //Changed so program will run untill a halt command or reaches end of memory 
+            while (uvSim.ProgramCounter != -666 && uvSim.ProgramCounter < uvSim.MemorySize)
             {
-                uvSim.RunCommand(instruction);
+                uvSim.ProgramCounter++;
+                uvSim.RunCommand(uvSim.Memory[uvSim.ProgramCounter - 1]);
             }
+            uvSim.ProgramCounter = 0;
         }
 
         private static void RunCommand(this UVSimModel uvSim, string instruction)
