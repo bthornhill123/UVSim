@@ -91,5 +91,6 @@ namespace UVSimWindowsFormsUI
         {
             uvSim.OutputTextblock.Text = "";
         }
+
     }
 }

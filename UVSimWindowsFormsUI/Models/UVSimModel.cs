@@ -12,6 +12,7 @@ namespace UVSimWindowsFormsUI.Models
         public int ProgramCounter { get; set; } = 0;
         public int Accumulator { get; set; }
         public int MemorySize { get; set; }
+
         public RichTextBox OutputTextblock { get; set; }
         public RichTextBox MemoryTextblock { get; set; }
 
