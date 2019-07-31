@@ -21,7 +21,7 @@ namespace UVSimWindowsFormsUI.HelperClasses
                 StartPosition = FormStartPosition.CenterScreen
             };
             Label textLabel = new Label() { Left = 50, Top = 20, Text = text };
-            TextBox textBox = new TextBox() { Left = 50, Top = 50, Width = 400 };
+            TextBox textBox = new TextBox() { Left = 50, Top = 50, Width = 200 };
             Button confirmation = new Button() { Text = "Ok", Left = 350, Width = 100, Top = 70, DialogResult = DialogResult.OK };
             confirmation.Click += (sender, e) => { prompt.Close(); };
             prompt.Controls.Add(textBox);
