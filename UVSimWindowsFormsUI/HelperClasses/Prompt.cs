@@ -14,7 +14,7 @@ namespace UVSimWindowsFormsUI.HelperClasses
         {
             Form prompt = new Form()
             {
-                Width = 250,
+                Width = 600,
                 Height = 150,
                 FormBorderStyle = FormBorderStyle.FixedDialog,
                 Text = caption,

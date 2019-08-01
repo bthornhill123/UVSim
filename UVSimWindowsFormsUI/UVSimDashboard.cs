@@ -84,17 +84,15 @@ namespace UVSimWindowsFormsUI
             {
                 uvSim.RunProgram();
                 uvSim.ProgramCounter = 0;
+                uvSim.DisplayMemory();
+                uvSim.DisplayRegisterStats();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 runProgramButton.Text = "Continue";
                 runProgramButton.BackColor = Color.LightYellow;
-            }
-            finally
-            {
-                uvSim.DisplayMemory();
-                uvSim.DisplayRegisterStats();
+                currentProgramListbox.SelectedIndex = uvSim.ProgramCounter;
             }
         }
 
