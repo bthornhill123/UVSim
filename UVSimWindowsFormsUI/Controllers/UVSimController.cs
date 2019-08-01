@@ -134,8 +134,8 @@ namespace UVSimWindowsFormsUI.Controllers
         public static void DisplayRegisterStats(this UVSimModel uvSim)
         {
             //Jaren Flaker 
-            uvSim.OutputTextblock.Text += $"Accumilator: {uvSim.Accumulator}\n";   
-            uvSim.OutputTextblock.Text += $"Program Counter: {uvSim.ProgramCounter}\n";
+            uvSim.OutputTextblock.Text += $"\nAccumilator: {uvSim.Accumulator}\n";   
+            uvSim.OutputTextblock.Text += $"\nProgram Counter: {uvSim.ProgramCounter}\n";
 
         }
 
